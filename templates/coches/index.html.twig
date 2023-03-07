@@ -13,6 +13,7 @@
                 <th>Apellidos</th>
                 <th>Direccion</th>
                 <th>Telefono</th>
+                <th>Marcas</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -24,7 +25,7 @@
                 <td>{{ coch.Apellidos }}</td>
                 <td>{{ coch.Direccion }}</td>
                 <td>{{ coch.Telefono }}</td>
-                <td>
+                <td>{{ coch.Marca }}</td>
                     <a href="{{ path('app_coches_show', {'id': coch.id}) }}">show</a>
                     <a href="{{ path('app_coches_edit', {'id': coch.id}) }}">edit</a>
                 </td>
